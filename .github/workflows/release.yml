@@ -1,4 +1,4 @@
-name: Release and CodeQL
+name: Release and ESLint
 
 on: 
   push:
@@ -37,7 +37,7 @@ jobs:
 
 
       - name: Build executables
-        run: cp index.js ibn-tools.js && pkg -t node16-win ibn-tools.js && rm ibn-tools.js
+        run: pkg -t node16-win sercos-parfile.js && rm sercos-parfile.js
 
       - name: Set env variables
         run: echo "NOW=v$(date +'%Y%m%d.%H%M%S')" >> $GITHUB_ENV
@@ -45,6 +45,6 @@ jobs:
       - name: Create release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "ibn-tools*"
+          artifacts: "sercos-parfile*"
           tag: ${{ env.NOW }}
           token: ${{ secrets.GITHUB_TOKEN }}

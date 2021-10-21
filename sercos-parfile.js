@@ -21,7 +21,7 @@ const readSingleFile = (_singleFile) => {
 	try {
 		mkdirSync(join(dirname(_singleFile), "Antriebsregler"));
 		mkdirSync(join(dirname(_singleFile), "IAC-2x"));
-	} catch(e) {}
+	} catch(e) {} // eslint-disable-line no-empty
 
 	//get content of parameter file and add workaround for split function
 	var singleFileRead = readFileSync(_singleFile, 'latin1');
