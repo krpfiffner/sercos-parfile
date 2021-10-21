@@ -1,0 +1,19 @@
+{
+  "name": "sercos-parfile",
+  "version": "1.0.0",
+  "description": "Bosch Rexroth multi parameter file converter",
+  "main": "sercos-parfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krpfiffner/sercos-parfile.git"
+  },
+  "author": "Riccardo H.",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/krpfiffner/sercos-parfile/issues"
+  },
+  "homepage": "https://github.com/krpfiffner/sercos-parfile#readme"
+}
